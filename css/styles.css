@@ -223,8 +223,7 @@ Intro
 ========================================================================== */
 .intro { background: #f3f5f8;  }
 .intro p { margin: 40px 0 0; }
-.slogan {font-size: 4em; text-transform: uppercase; color: rgb(13,80,35); font-family: 'Covered By Your Grace', sans-serif; padding-top:1em; }
-#marijuana {font-family: 'Covered By Your Grace', cursive;}
+.slogan {font-size: 6em; color: rgb(45,218,103); font-family: 'Kristi', cursive;  }
 .button {font-size:1.5em; margin-right:1em; color: white; width:6em;
 	box-shadow: white 0 0px 0px 0px inset;}
 .button:hover {
