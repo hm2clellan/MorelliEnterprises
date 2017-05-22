@@ -192,9 +192,9 @@ Navigation
 ========================================================================== */
 nav { background-color: transparent; padding-bottom:40px;  }
 nav ul { list-style: none; padding: 0; }
-nav ul li { color: rgba(61, 201, 179, 0.8); display: inline-block; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; text-align:center; font-family: monospace, serif; font-size: 1.5em;  }
-nav ul li a { color: rgba(61, 201, 179, 0.8); display: block; ; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
-nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #000000; }
+nav ul li { color: white; display: inline-block; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; text-align:center; font-family: monospace, serif; font-size: 1.5em;  }
+nav ul li a { color: white; display: block; ; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
+nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #fff; }
 #nav-toggle { position: absolute; right: 15px; top: 0; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background: #fff; position: absolute; display: block; content: ''; }
@@ -211,18 +211,26 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #000000; }
 /* ==========================================================================
 Hero
 ========================================================================== */
-.hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
+.hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: 90%; }
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
+.logo {margin-top:-5%; margin-bottom:-2%;}
 /* ==========================================================================
 Intro
 ========================================================================== */
-.intro { background: #f3f5f8; }
-.intro p { margin: 50px 0 0; }
-.slogan {font-size: 6em; text-transform: uppercase; color: rgba(61, 201, 179, 0.8); font-fadily: 'Varela Round'; padding-top:50; }
+.intro { background: #f3f5f8;  }
+.intro p { margin: 40px 0 0; }
+.slogan {font-size: 4em; text-transform: uppercase; color: rgb(13,80,35); font-family: 'Covered By Your Grace', sans-serif; padding-top:50; }
+#marijuana {font-family: 'Covered By Your Grace', cursive;}
+.button {font-size:1.5em; margin-right:10px; padding-right:5px; color: white; width:6em;
+	box-shadow: white 0 0px 0px 0px inset;}
+.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgb(13,80,35) 0 0px 0px 40px inset; opacity: .5;
+}
 h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features

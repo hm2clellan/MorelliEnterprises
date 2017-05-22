@@ -1,5 +1,5 @@
 
-/* global $ */
+
 
 <html lang="en" class=" js no-touch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
       <meta charset="utf-8">
@@ -12,10 +12,13 @@
       <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
       <link href="css/flexslider.css" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
       <link href="css/queries.css" rel="stylesheet">
       <link rel="stylesheet" href="css/verify.css">
+      <link rel="stylesheet" href="css/component.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
       <link href="css/animate.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/component.css">
@@ -82,19 +85,20 @@
 </style><style media="all">.flex-direction-nav .flex-disabled{}
 @media screen and (max-width: 860px) {}</style><style media="all"></style><style media="all">@media screen and (max-width:320px) {}@media screen and (max-width:480px) {}@media screen and (max-width:1024px) {}@media screen and (max-width:1280px) {}@media screen and (min-width:480px) and (max-width:991px) {}</style><style media="all"></style><style media="all"></style><style media="all"></style></head>
    <body id="top">
-      <div id="age-verify" class="hidden">
-         <div class="window">
-            <span class="title">Are you over 21?</span>
-            <span>To visit our website, you must be of legal age.</span>
-            <button class="yes" onclick="overAge()">Yes</button>
-            <button class="no" onclick="underAge()">No</button>
-            <div class="underBox">
-               <span class="title">Sorry!</span>
-               <span>You need to be at least 21 to visit our website.</span>
-               <button class="back" onclick="goBack()">Go Back</button>
-            </div>
-         </div>
-      </div>
+     <div id="age-verify">
+<div class="window">
+  <span class="title">Are you over 18?</span>
+  <span>To visit our website, you must be of legal drinking age.</span>
+  <button class="yes" onclick="overAge()">Yes</button>
+  <button class="no" onclick="underAge()">No</button>
+  <div class="underBox">
+    <span class="title">Sorry!</span>
+    <span>You need to be at least 18 to visit our website.</span>
+    <button class="back" onclick="goBack()">Go Back</button>
+  </div>
+<span>
+</div>
+</div>
       <div class="md-modal md-effect-1" id="modal-1">
          <div class="md-content">
             <h3>Ace OG</h3>
@@ -212,24 +216,26 @@
       <header id="home">
          <section class="hero" id="hero">
                
-                   <div class="text-center">
-                     <nav class="pull">
-                        <ul class="top-nav">
-                           <li class="col-"><a href="#intro">|Introduction|<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                           <li class="col-"><a href="#features">Strains|<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                           <li class="col-"><a href="#grow">Grow|<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                           <li class="col-"><a href="#contact">Get in Touch|<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                        </ul>
-                     </nav>
-                  </div>
+                
                   <div class="text-center ">
-                     <h1 class="animated fadeInDown"><img alt="Morelli Enterprises" src="img/logo_rev.png"></h1>
+                     <h1 class="animated fadeInDown"><img class="logo" alt="Morelli Enterprises" src="img/logo_rev.png"></h1>
                      
                   </div>
               
             
                   <div class="text-center">
-                     <div class="animated fadeInUp delay-05s slogan">I got 99 Problems but<br> <em>Marijuana </em> 'aint one </br></div>
+                     <div class="animated fadeInUp delay-05s slogan">I got 99 Problems but<br> <em id="marijuana">Marijuana </em> 'aint one </br></div>
+                  </div>
+                  
+                     <div class="text-center">
+                     <nav class="pull">
+                        <ul class="top-nav">
+                           <li class="col-"><a href="#intro" class="button"><img src="img/Leaf.png">Intro</a></li>
+                           <li class="col-"><a href="#features" class="button"><img src="img/Leaf.png">Strains</a></li>
+                        <li class="col-"><a href="#grow" class="button"><img src="img/Leaf.png">Grow</a></li>
+                           <li class="col-"><a href="#contact" class="button"><img src="img/Leaf.png">Contact</a> </li>
+                        </ul>
+                     </nav>
                   </div>
    
             
@@ -258,6 +264,7 @@
          </div>
       </section>
       <section class="features text-center section-padding" id="features">
+         
          <div id="strains" class="container">
             <div class="row">
                <div class="col-md-12">
@@ -294,6 +301,7 @@
                                                    </div>
       </section>
     <section class="text-center" id="responsive">
+       
          <div class="container-fluid nopadding responsive-services">
             <div class="wrapper">
                <div class="iphone">
@@ -381,25 +389,22 @@
       </footer>
       <div class="md-overlay"></div>
       <!-- the overlay element -->
-   /* global $ */
-
       <script>/*
          You'll probably want to drop a cookie so this doesn't pop up everytime. I'd reccomend this plugin:
          https://github.com/js-cookie/js-cookie
          */
-     /* global $ */
-     /* global overAge */
-         overAge = function () {
-           $('#age-verify').addClass('hidden');
-         }
          
-         underAge = function () {
-           $('#age-verify').addClass('under');
-         }
-         
-         goBack = function () {
-             window.history.back();
-         }
+        overAge = function () {
+  $('#age-verify').addClass('hidden');
+}
+
+underAge = function () {
+  $('#age-verify').addClass('under');
+}
+
+goBack = function () {
+    window.history.back();
+}
       </script>
       <!-- classie.js by @desandro: https://github.com/desandro/classie -->
       <script src="js/classie.js"></script>
@@ -413,7 +418,6 @@
       <script src="js/cssParser.js"></script>
       <script src="js/css-filters-polyfill.js"></script>
       <script>
-       
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -423,7 +427,6 @@
          ga('send', 'pageview');
          
       </script>
-   </script>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -432,4 +435,5 @@
       <script src="js/scripts.js"></script>
       <script src="js/jquery.flexslider.js"></script>
       <script src="js/modernizr.js"></script>
-</body></html>
+   </body>
+</html>
