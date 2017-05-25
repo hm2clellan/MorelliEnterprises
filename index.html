@@ -1,6 +1,4 @@
 
-
-
 <html lang="en" class=" js no-touch js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +11,7 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine|Covered+By+Your+Grace|Kristi|Poiret+One|Sacramento|Shadows+Into+Light" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
       <link href="css/flexslider.css" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
       <link href="css/queries.css" rel="stylesheet">
@@ -25,7 +23,7 @@
      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <script type="text/javascript" src="js/scripts.js"></script>
-      <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/modernizr.js"></script>
+      <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/modernizr.custom.js"></script>
        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -96,6 +94,7 @@
     <span>You need to be at least 18 to visit our website.</span>
     <button class="back" onclick="goBack()">Go Back</button>
   </div>
+<span>
 </div>
 </div>
       <div class="md-modal md-effect-1" id="modal-1">
@@ -213,23 +212,22 @@
          </div>
       </div>
       <header id="home">
-         <section class="hero " id="hero">
-               
+         <section class="hero">
+               <div class="container">
                 
-                  <div class="text-center col-md-12">
-                     <h1 class="animated fadeInDown"><img class="logo" alt="Morelli Enterprises" src="img/pinklogo.png"></h1>
+                  <div class="text-center row">
+                     <h1 class="col-xs-12 animated fadeInDown col"><img class="logo" alt="Morelli Enterprises" src="img/pinklogo.png"></h1>
                      
                   </div>
               
-             <div class="text-center col-md-12">
-                     <div class="animated fadeInUp delay-05s slogan ">I got 99 Problems but<br> <em id="marijuana">Marijuana </em> 'aint one </br></div>
+            
+                  <div class="text-center row">
+                     <div class="col-xs-12 animated fadeInUp delay-05s slogan">I got 99 Problems but<br> <em id="marijuana">Marijuana </em> 'aint one </br></div>
                   </div>
-                 
                   
-                    
-    <div class="text-center">
-                     <nav class="pull">
-                        <ul class="top-nav col-md-12">
+                     <div class="text-center row">
+                     <nav class="pull col-xs-12">
+                        <ul class="top-nav">
                            <li class="col-"><a href="#intro" class="button"><img src="img/Leaf.png">Intro</a></li>
                            <li class="col-"><a href="#features" class="button"><img src="img/Leaf.png">Strains</a></li>
                         <li class="col-"><a href="#grow" class="button"><img src="img/Leaf.png">Grow</a></li>
@@ -237,7 +235,8 @@
                         </ul>
                      </nav>
                   </div>
-            
+   
+            </div>
          </section>
       </header>
       <section class="intro text-center section-padding" id="intro">
@@ -396,11 +395,9 @@
         overAge = function () {
   $('#age-verify').addClass('hidden');
 }
-
 underAge = function () {
   $('#age-verify').addClass('under');
 }
-
 goBack = function () {
     window.history.back();
 }
